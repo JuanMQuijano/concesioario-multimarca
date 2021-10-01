@@ -14,38 +14,38 @@ function App() {
   return (
     <Router>
       <Switch>
-        <Route path={['/admin/Index', '/admin/Vehiculos', '/Admin/Clientes']}>
+        <Route path={["/admin/Index", "/admin/Vehiculos", "/Admin/Clientes"]}>
           <PrivateLayout>
             <Switch>
-              <Route path='/admin/Index'>
-                <Admin/>
+              <Route path="/admin/Index">
+                <Admin />
               </Route>
-              <Route path='/admin/Vehiculos'>
-                <Vehiculos/>
+              <Route path="/admin/Vehiculos">
+                <Vehiculos />
               </Route>
-              <Route path='/Admin/Clientes'>
-                <Clientes/>
+              <Route path="/Admin/Clientes">
+                <Clientes />
               </Route>
             </Switch>
           </PrivateLayout>
         </Route>
-        <Route path={['/Login','/Registro']}>
+        <Route path={["/Login", "/Registro"]}>
           <AuthLayout>
             <Switch>
-              <Route path='/Login'>
-                <Login/>
+              <Route path="/Login">
+                <Login />
               </Route>
-              <Route path='/Registro'>
-                <Registro/>
+              <Route path="/Registro">
+                <Registro />
               </Route>
             </Switch>
           </AuthLayout>
         </Route>
-        <Route path={['/']}>
+        <Route path={["/"]}>
           <PublicLayout>
             <Switch>
-              <Route path='/'>
-                <Index/>
+              <Route path="/">
+                <Index />
               </Route>
             </Switch>
           </PublicLayout>
